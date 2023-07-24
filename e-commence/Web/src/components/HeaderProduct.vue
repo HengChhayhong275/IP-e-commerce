@@ -13,7 +13,7 @@
           <h2>168 CLOTHES STORE</h2>
           <nav>
             <ul>
-              <li><a><router-link to="/" class="a">HOME</router-link></a></li>
+              <li><a><router-link to="/product" class="a">PRODUCTS</router-link></a></li>
               <li><a><router-link to="/men" class="a">MEN</router-link></a></li>
               <li><a><router-link to="/women" class="a">WOMEN</router-link></a></li>
               <li><a><router-link to="/kid" class="a">KID</router-link></a></li>

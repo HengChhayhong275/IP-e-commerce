@@ -3,11 +3,11 @@
     <div>
       <div class="nav">
           <ul>
-            <li><a href="">HOME</a></li>
-            <li><a href="">MEN</a></li>
-            <li><a href="">WOMEN</a></li>
-            <li><a href="">KID</a></li>
-            <li><a href="">ACCESSORIES</a></li>
+            <li><a href="/">HOME</a></li>
+            <li><a href="/men">MEN</a></li>
+            <li><a href="/women">WOMEN</a></li>
+            <li><a href="/kid">KID</a></li>
+            <li><a href="/accessories">ACCESSORIES</a></li>
           </ul>
       </div>
     </div>

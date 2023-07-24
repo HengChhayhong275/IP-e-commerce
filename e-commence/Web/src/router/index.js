@@ -7,6 +7,7 @@ import Men from "../components/Men.vue"
 import Women from "../components/Women.vue"
 import Kid from "../components/Kid.vue"
 import Accessories from "../components/Accessories.vue"
+import Detial from "../components/Detial.vue"
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -50,6 +51,11 @@ const router = createRouter({
       path: "/accessories",
       name: "accessories",
       component: Accessories,
+    },
+    {
+      path: "/detial/:id",
+      name: "detial",
+      component: Detial,
     },
 
   ],

@@ -2,7 +2,8 @@
   <div class="product">
     <HeaderProduct/> 
     <div class="d-flex justify-content-between">
-      <h1 class="ms-3 mt-2">Products</h1>
+      <router-link to="/" class="btn btn-info h-25 mt-2 ms-2" style="background-color: #f2f2f2;">Back to Home Page</router-link>
+      <h1 class="mx-auto" style="color: #468B97;">Products</h1>
       <Search @search="search = $event"/>
     </div>
     <ItemCard :search="search"/>

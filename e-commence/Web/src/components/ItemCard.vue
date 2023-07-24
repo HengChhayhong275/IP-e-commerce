@@ -3,20 +3,22 @@
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
         <div v-for="item in filteredItems" :key="item.id">
           <div class="card">
-            <div class="card-img-zoom mx-auto my-2">
-              <img :src="item.image" class="card-img-top" alt="...">
-            </div>
-            <!-- <div class="card-body">
-              <h5 class="card-title text-center">{{ item.title }}</h5>
-              <div class="price">
-                <div>Price: </div>
-                <div>{{ item.price }}</div>
+              <img :src="item.image" alt="...">
+              <div class="category">
+                <p class="ms-2">Category:</p>
+                <p class="cate1">{{ item.category }}</p>
               </div>
-              <router-link class="row justify-content-center align-items-center" v-bind:to="'/products/'+item.id" id="view-detail">
-              <button>View Detail</button>
-            </router-link>
-            </div> -->
-          </div>
+              <h5>{{ item.title }}</h5>
+              <p class="text-danger">{{ item.price }}</p>
+              <div class="btn">
+                <router-link v-bind:to="'/detial/'+item.id">
+                  <button class="btn1">VIEW DETAIL</button>
+                </router-link>
+                <router-link  v-bind:to="'/detial/'+item.id">
+                  <button class="btn2">ADD TO CART</button>
+              </router-link>
+              </div>
+            </div>
         </div>
       </div>
     </div>
@@ -46,48 +48,61 @@
   </script>
   
   <style scoped>
-
-  /* #view-detail{
-    text-decoration: none;
-  }
-  #view-detail button:hover{
-    background-color: #468B97;
-  }
-  #view-detail button{
-    text-decoration: none;
-    color: white;
-    background-color: gray;
-    border-radius: 10px;
-  } */
   .container {
     margin-top: 30px;
   }
   .card {
-    height: 400px;
-    border: 1px solid black;
-    background-color: #f2f2f2;
+  width: 330px;
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid #ccc;
   }
-  .card:hover {
-    cursor: pointer;
+  h5,p{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
   }
-  
-  .card-img-top {
-    height: 100%;
+
+  img{
+    width: 290px;
+    height: 340px;
+    margin: 0 auto;
   }
-  
-  .card-img-zoom {
-    overflow: hidden;
-    transition: transform 0.5s ease;
-    width: 90%;
+  button{
+    max-width: 100%;
+    display: inline-block;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-family: 'Courier New', Courier, monospace;
   }
-  
-  .card-img-zoom:hover img {
-    transform: scale(1.1);
-  }
-  /* .price{
-    margin: auto;
-    width: 90%;
+  .btn{
     display: flex;
-    justify-content: space-between;
-  } */
+  }
+  .btn1{
+    color: #1B6B93;
+    background-color: white;
+    border: 1px solid #1B6B93;
+  }
+  .btn1:hover{
+    background-color: #1B6B93;
+    color: white;
+  }
+  .btn2{
+    color: #7AA874;
+    background-color: white;
+    border: 1px solid #7AA874;
+  }
+  .btn2:hover{
+    background-color: #7AA874;
+    color: white;
+  }
+  .category p{
+    display: inline-flex;
+  }
+  .cate1{
+    position: absolute;
+    right: 1.2rem;
+  }
   </style>

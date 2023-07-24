@@ -4,7 +4,7 @@ export const items = [
         category: 'Men',
         title: 'Shirt',
         price: '10,00$',
-        description: 'Hello1',
+        description: 'From America',
         image: 'https://assets.ajio.com/medias/sys_master/root/20230602/dH6Z/6479226442f9e729d70a5354/-473Wx593H-461119105-blue-MODEL.jpg'
     },
     {

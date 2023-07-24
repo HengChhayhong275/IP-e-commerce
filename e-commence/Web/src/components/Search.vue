@@ -1,7 +1,7 @@
 <template>
-    <form class="d-flex w-25 border border-success rounded-pill me-3">
+    <form class="d-flex border border-success rounded-pill me-3">
         <div class="input-group">
-          <input v-model="search" @input="$emit('search', search)" class="form-control rounded-pill" type="search" placeholder="Search for what you like." aria-label="Search">
+          <input v-model="search" @input="$emit('search', search)" class="form-control rounded-pill" type="search" placeholder="Search" aria-label="Search">
           <button class="btn input-group-text" type="submit"><i class="fas fa-search text-black"></i></button>
         </div>
       </form>
