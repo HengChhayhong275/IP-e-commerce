@@ -8,6 +8,7 @@ import Women from "../components/Women.vue"
 import Kid from "../components/Kid.vue"
 import Accessories from "../components/Accessories.vue"
 import Detial from "../components/Detial.vue"
+import Cart from "../components/Cart.vue"
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -57,6 +58,12 @@ const router = createRouter({
       name: "detial",
       component: Detial,
     },
+    {
+      path: "/cart",
+      name: "cart",
+      component: Cart,
+    },
+
 
   ],
 });
