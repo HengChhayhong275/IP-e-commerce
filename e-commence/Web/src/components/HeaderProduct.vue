@@ -167,7 +167,7 @@
   }
 
 
-  @media screen and (max-width:1200px) {
+  @media screen and (max-width:800px) {
     .nav-bar, ul{
     display: flex;
     list-style-type: none;

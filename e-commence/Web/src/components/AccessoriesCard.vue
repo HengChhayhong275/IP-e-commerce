@@ -1,24 +1,24 @@
 <template>
     <div class="container">
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-        <div v-for="item in filteredItems" :key="item.id">
+        <div v-for="item in filteredProducts" :key="item.id">
           <div class="card">
-              <img :src="item.image" alt="...">
-              <div class="category">
-                <p class="ms-2">Category:</p>
-                <p class="cate1">{{ item.category }}</p>
-              </div>
+            <img :src="item.image" alt="...">
+            <div class="category">
+              <p class="ms-2">Category:</p>
+              <p class="cate1">{{ item.category }}</p>
+            </div>
               <h5>{{ item.title }}</h5>
               <p class="text-danger">{{ item.price }}</p>
-              <div class="btn">
-                <router-link v-bind:to="'/detial/'+item.id">
-                  <button class="btn1">VIEW DETAIL</button>
-                </router-link>
-                <router-link  v-bind:to="'/detial/'+item.id">
-                  <button class="btn2">ADD TO CART</button>
+            <div class="btn">
+              <router-link v-bind:to="'/detial/'+item.id">
+                <button class="btn1">VIEW DETAIL</button>
               </router-link>
-              </div>
+              <router-link  v-bind:to="'/detial/'+item.id">
+                <button class="btn2">ADD TO CART</button>
+              </router-link>
             </div>
+          </div>
         </div>
       </div>
     </div>
@@ -31,19 +31,17 @@
     props: {
     search: String,
   },
-  computed: {
-    filteredItems() {
-      if (!this.search) return this.items;
-      return this.items.filter(item =>
-        item.title.toLowerCase().includes(this.search.toLowerCase())
-      );
-  },
-},
+  
     data() {
-      return {
+      return{
         items,
       }
     },
+    computed: {
+      filteredProducts() {
+        return this.items.filter(item => item.category === "Accessories");
+      }
+    }
   }
   </script>
   
@@ -62,7 +60,7 @@
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
   }
-
+  
   img{
     width: 290px;
     height: 340px;

@@ -44,4 +44,7 @@ export default{
     font-size: x-large;
     background-color: #ffffff;
 }
+i:hover{
+    scale: 1.1;
+}
 </style>

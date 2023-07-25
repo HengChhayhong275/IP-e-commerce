@@ -17,7 +17,7 @@ export const items = [
     },
     {
         id: 3,
-        category: 'Women',
+        category: 'Men',
         title: 'Shirt',
         price: '10,00$',
         description: 'hello3',
@@ -37,6 +37,14 @@ export const items = [
         title: 'Shirt',
         price: '10,00$',
         description: 'hello5',
+        image: './assets/images/kid'
+    },
+    {
+        id: 6,
+        category: 'Accessories',
+        title: 'Bag',
+        price: '10,00$',
+        description: 'hello6',
         image: './assets/images/kid'
     }
 

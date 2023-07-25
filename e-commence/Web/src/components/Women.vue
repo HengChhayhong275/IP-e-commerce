@@ -1,28 +1,41 @@
 <template>
-    <div class="women">
-      <HeaderProduct/> 
-      <div class="d-flex justify-content-between">
-        <h3 class="ms-3 mt-2">Women</h3>
-        <Search/>
-      </div>
-      
+  <div class="men">
+    <HeaderProduct/>
+    <div class="d-flex">
+      <button type="button" class="btn btn-light ms-2 mt-2 p-0"><router-link class="btn" to="/">
+        <i class="fa-solid fa-circle-arrow-left me-2"></i>HOME
+      </router-link>
+        </button>
+      <h1 style="color: #468B97;">Women</h1>
     </div>
-  </template>
-  <script>
-  import HeaderProduct from '../components/HeaderProduct.vue'
-  import Search from '../components/Search.vue';
-    export default{
-      name: "women",
-      components: {
-        HeaderProduct,
-        Search
-      }
-    }
-  </script>
-  <style scoped>
-  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
-  div{
-    font-family: 'Playfair Display', serif;
-  }
-  </style>
-  
+    <WomenCard/>
+  </div>
+</template>
+<script>
+import HeaderProduct from '../components/HeaderProduct.vue'
+import WomenCard from './WomenCard.vue';
+  export default{
+    name: "product",
+    components: {
+      HeaderProduct,
+      WomenCard
+    },
+
+  };
+</script>
+<style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+div{
+  font-family: 'Playfair Display', serif;
+}
+i, .btn{
+  color: black;
+  text-decoration: none;
+  font-weight: bolder;
+}
+h1{
+  position: absolute;
+  left: 43%;
+  text-transform: uppercase;
+}
+</style>

@@ -1,38 +1,41 @@
 <template>
-    <div class="men">
-      <HeaderProduct/> 
-      <div class="d-flex justify-content-between">
-        <h3 class="ms-3 mt-2">Men</h3>
-        <Search/>
-      </div>
-      <ItemCard/>
+  <div class="men">
+    <HeaderProduct/>
+    <div class="d-flex">
+      <button type="button" class="btn btn-light ms-2 mt-2 p-0"><router-link class="btn" to="/">
+        <i class="fa-solid fa-circle-arrow-left me-2"></i>HOME
+      </router-link>
+        </button>
+      <h1 style="color: #468B97;">Men</h1>
     </div>
-  </template>
-  <script>
-  import HeaderProduct from '../components/HeaderProduct.vue'
-  import Search from '../components/Search.vue';
-  import ItemCard from './ItemCard.vue';
-  import {items} from '../data'
-    export default{
-      name: "men",
-      components: {
-        HeaderProduct,
-        Search,
-        ItemCard
-      },
-      props: {
-        item: items,
-      },
-      mounted() {
-      this.item = items.filter(item => item.category === "Men");
+    <MenCardVue/>
+  </div>
+</template>
+<script>
+import HeaderProduct from '../components/HeaderProduct.vue'
+import MenCardVue from './MenCard.vue';
+  export default{
+    name: "product",
+    components: {
+      HeaderProduct,
+      MenCardVue
     },
 
-    }
-  </script>
-  <style scoped>
-  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
-  div{
-    font-family: 'Playfair Display', serif;
-  }
-  </style>
-  
+  };
+</script>
+<style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+div{
+  font-family: 'Playfair Display', serif;
+}
+i, .btn{
+  color: black;
+  text-decoration: none;
+  font-weight: bolder;
+}
+h1{
+  position: absolute;
+  left: 45%;
+  text-transform: uppercase;
+}
+</style>

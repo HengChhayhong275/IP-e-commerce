@@ -66,32 +66,35 @@
         <p style="font-size: 25px; margin-top: 65px; font-weight: 800;">NEW ARRIVAL</p>
         <p style="font-size: 20px; margin-top: 30px;">MEN COLLECTION</p>
         <p style="font-size: 15px; margin-top: 15px;">Check out our men clothes</p>
-        <button class="shoping-button" style="margin-top: 25px; padding: 10px 30px 10px 30px; border-radius: 10px; ">SHOP NOW</button>
+        <router-link to="/men">
+          <button class="shoping-button" style="margin-top: 25px; padding: 10px 30px 10px 30px; border-radius: 10px; ">SHOP NOW</button>
+        </router-link>
       </div>
 
       <div class="new-arrive1" style="text-align: center; justify-content: center;">
         <img class="arrival-image" src="../assets/images/men-cloth1.jpeg" alt="men shirt" style="width: 230px; height: 230px; margin: 10px 10px 0 29px; border-radius: 10px;">
         <p style="margin: 0.3rem 0;">SHIRT</p>
         <p style="margin: 0.3rem 0;">10,00$</p>
-        <a href="#" style="font-size: small;">VIEW MORE</a>
+        <a href="#" style="font-size: small;"><router-link to="/men">VIEW MORE</router-link></a>
+        <!-- style="margin-top: 25px; padding:5px 10px; border-radius: 10px; -->
       </div>
       <div class="new-arrive2" style="text-align: center; justify-content: center;">
         <img class="arrival-image"  src="../assets/images/Hoodie.webp" alt="men hoodie" style="width: 230px; height: 230px; margin: 10px 10px 0 29px; border-radius: 10px;">
         <p style="margin: 0.3rem 0;">HOODIE</p>
         <p style="margin: 0.3rem 0;">20,00$</p>
-        <a href="#" style="font-size: small;">VIEW MORE</a>
+        <a href="#" style="font-size: small;"><router-link to="/men">VIEW MORE</router-link></a>
       </div>
       <div class="new-arrive3" style="text-align: center; justify-content: center;">
         <img class="arrival-image"  src="../assets/images/Short.jpeg" alt="men short" style="width: 230px; height: 230px; margin: 10px 10px 0 29px; border-radius: 10px;">
         <p style="margin: 0.3rem 0;">SHORT</p>
         <p style="margin: 0.3rem 0;">5,00$</p>
-        <a href="#" style="font-size: small;">VIEW MORE</a>
+        <a href="#" style="font-size: small;"><router-link to="/men">VIEW MORE</router-link></a>  
       </div>
       <div class="new-arrive4" style="text-align: center; justify-content: center;">
         <img class="arrival-image"  src="../assets/images/men-jeans.webp" alt="men jeans" style="width: 230px; height: 230px; margin: 10px 10px 0 29px; border-radius: 10px;">
         <p style="margin: 0.3rem 0;">JEANS</p>
         <p style="margin: 0.3rem 0;">15,00$</p>
-        <a href="#" style="font-size: small;">VIEW MORE</a>
+        <a href="#" style="font-size: small;"><router-link to="/men">VIEW MORE</router-link></a>
       </div>
     </div>
     <br><br>
@@ -105,17 +108,17 @@
         <div class="thing1">
           <img class="thing-img" src="../assets/images/addidas-shoes.webp" alt="Shoes" style="width: 260px; height: 260px; margin: 10px 0; border-radius: 10px;">
           <p style="margin: 0.3rem 0;">MEN SHOES</p>
-          <a href="#" style="font-size: small;">VIEW MORE</a>
+          <a href="#" style="font-size: small;"><router-link to="/men">VIEW MORE</router-link></a>
         </div>
         <div class="thing2" style="text-align: center; justify-content: center;">
           <img class="thing-img" src="../assets/images/wallet.jpeg" alt="Wallet" style="width: 260px; height: 260px; margin: 10px 0; border-radius: 10px;">
           <p style="margin: 0.3rem 0;">WALLET</p>
-          <a href="#" style="font-size: small;">VIEW MORE</a>
+          <a href="#" style="font-size: small;"><router-link to="/men">VIEW MORE</router-link></a>
         </div>
         <div class="thing3" style="text-align: center; justify-content: center;">
           <img class="thing-img" src="../assets/images/watch.jpg" alt="Watch" style="width: 260px; height: 260px; margin: 10px 0; border-radius: 10px;">
           <p style="margin: 0.3rem 0;">WATCH</p>
-          <a href="#" style="font-size: small;">VIEW MORE</a>
+          <a href="#" style="font-size: small;"><router-link to="/men">VIEW MORE</router-link></a>
         </div>
       </div>
     </section>
@@ -130,19 +133,19 @@
     <div class="treding-cate" style="text-align: center;">
       <div class="treding1">
         <img src="../assets/images/men-treding1.png" alt="men shirt" style="width: 250px; height: 250px; margin: 30px 10px 0 25px; border-radius: 10px;"><br><br>
-        <a href="#" style="font-size: small;">VIEW MORE</a>
+        <a href="#" style="font-size: small;"><router-link to="/men">VIEW MORE</router-link></a>
       </div>
       <div class="trending2" style="text-align: center; justify-content: center;">
         <img src="../assets/images/men-treding2.jpeg" alt="men hoodie" style="width: 250px; height: 250px; margin: 30px 10px 0 25px; border-radius: 10px;"><br><br>
-        <a href="#" style="font-size: small;">VIEW MORE</a>
+        <a href="#" style="font-size: small;"><router-link to="/men">VIEW MORE</router-link></a>
       </div>
       <div class="trending3" style="text-align: center; justify-content: center;">
         <img src="../assets/images/men-treding3.jpeg" alt="men jeans" style="width: 250px; height: 250px; margin: 30px 10px 0 25px; border-radius: 10px;"><br><br>
-        <a href="#" style="font-size: small;">VIEW MORE</a>
+        <a href="#" style="font-size: small;"><router-link to="/men">VIEW MORE</router-link></a>
       </div>
       <div class="trending4" style="text-align: center; justify-content: center;">
         <img src="../assets/images/men-trending4.png" alt="men trouser" style="width: 250px; height: 250px; margin: 30px 10px 0 25px; border-radius: 10px;"><br><br>
-        <a href="#" style="font-size: small;">VIEW MORE</a>
+        <a href="#" style="font-size: small;"><router-link to="/men">VIEW MORE</router-link></a>
       </div>
     </div>
 
@@ -155,31 +158,33 @@
         <p style="font-size: 25px; margin-top: 65px; font-weight: 800;">NEW ARRIVAL</p>
         <p style="font-size: 20px; margin-top: 30px;">WOMEN COLLECTION</p>
         <p style="font-size: 15px; margin-top: 15px;">Check out our men clothes</p>
-        <button class="shoping-button" style="margin-top: 25px; padding: 10px 30px 10px 30px; border-radius: 10px; ">SHOP NOW</button>
+        <router-link to="/women">
+          <button class="shoping-button" style="margin-top: 25px; padding: 10px 30px 10px 30px; border-radius: 10px; ">SHOP NOW</button>
+        </router-link>
       </div>
       <div class="new-arrive1" style="text-align: center; justify-content: center;">
         <img class="arrival-image" src="../assets/images/women-shirt.jpeg" alt="women shirt" style="width: 230px; height: 230px; margin: 10px 0; border-radius: 10px;">
         <p style="margin: 0.3rem;">SHIRT</p>
         <p style="margin: 0.3rem;">10,00$</p>
-        <a href="#" style="font-size: small;">VIEW MORE</a>
+        <a href="#" style="font-size: small;"><router-link to="/women">VIEW MORE</router-link></a>
       </div>
       <div class="new-arrive2" style="text-align: center; justify-content: center;">
         <img class="arrival-image"  src="../assets/images/women-trouser.webp" alt="women trouser" style="width: 230px; height: 230px; margin: 10px 0; border-radius: 10px;">
         <p style="margin: 0.3rem;">TROUSER</p>
         <p style="margin: 0.3rem;">15,00$</p>
-        <a href="#" style="font-size: small;">VIEW MORE</a>
+        <a href="#" style="font-size: small;"><router-link to="/women">VIEW MORE</router-link></a>
       </div>
       <div class="new-arrive3" style="text-align: center; justify-content: center;">
         <img class="arrival-image"  src="../assets/images/women-jacket.webp" alt="women jacket" style="width: 230px; height: 230px; margin: 10px 0; border-radius: 10px;">
         <p style="margin: 0.3rem;">JACKET</p>
         <p style="margin: 0.3rem;">25,00$</p>
-        <a href="#" style="font-size: small;">VIEW MORE</a>
+        <a href="#" style="font-size: small;"><router-link to="/women">VIEW MORE</router-link></a>
       </div>
       <div class="new-arrive4" style="text-align: center; justify-content: center;">
         <img class="arrival-image"  src="../assets/images/women-dress.jpeg" alt="dress" style="width: 230px; height: 230px; margin: 10px 0; border-radius: 10px;">
         <p style="margin: 0.3rem;">DRESS</p>
         <p style="margin: 0.3rem;">20,00$</p>
-        <a href="#" style="font-size: small;">VIEW MORE</a>
+        <a href="#" style="font-size: small;"><router-link to="/women">VIEW MORE</router-link></a>
       </div>
     </div>
     <br><br>
@@ -191,17 +196,17 @@
         <div class="thing1" style="text-align: center; justify-content: center;">
           <img class="thing-img" src="../assets/images/women-shoes.avif" alt="women shoes" style="width: 260px; height: 260px; margin: 10px 0; border-radius: 10px;">
           <p style="margin: 0.3rem;">WOMEN SHOES</p>
-          <a href="#" style="font-size: small;">VIEW MORE</a>
+          <a href="#" style="font-size: small;"><router-link to="/women">VIEW MORE</router-link></a>
         </div>
         <div class="thing2" style="text-align: center; justify-content: center;">
           <img class="thing-img" src="../assets/images/women-purse.jpeg" alt="purse" style="width: 260px; height: 260px; margin: 10px 0; border-radius: 10px;">
           <p style="margin: 0.3rem;">PURSE</p>
-          <a href="#" style="font-size: small;">VIEW MORE</a>
+          <a href="#" style="font-size: small;"><router-link to="/women">VIEW MORE</router-link></a>
         </div>
         <div class="thing3" style="text-align: center; justify-content: center;">
           <img class="thing-img" src="../assets/images/women-watch.jpeg" alt="women watch" style="width: 260px; height: 260px; margin: 10px 0; border-radius: 10px;">
           <p style="margin: 0.3rem;">WATCH</p>
-          <a href="#" style="font-size: small;">VIEW MORE</a>
+          <a href="#" style="font-size: small;"><router-link to="/women">VIEW MORE</router-link></a>
         </div>
       </div>
     </div>
@@ -214,19 +219,19 @@
     <div class="treding-cate">
       <div class="treding1" style="text-align: center; justify-content: center;">
       <img src="../assets/images/women-treding1.jpeg" alt="women jacket" style="width: 250px; height: 250px; margin: 30px 10px 0 25px; border-radius: 10px;"><br><br>
-      <a href="#" style="font-size: small;">VIEW MORE</a>
+      <a href="#" style="font-size: small;"><router-link to="/women">VIEW MORE</router-link></a>
       </div>
       <div class="trending2" style="text-align: center; justify-content: center;">
         <img src="../assets/images/women-trending2.jpeg" alt="women hoodie" style="width: 250px; height: 250px; margin: 30px 10px 0 25px; border-radius: 10px;"><br><br>
-        <a href="#" style="font-size: small;">VIEW MORE</a>
+        <a href="#" style="font-size: small;"><router-link to="/women">VIEW MORE</router-link></a>
       </div>
       <div class="trending3" style="text-align: center; justify-content: center;">
         <img src="../assets/images/women-trending3.jpeg" alt="women dress" style="width: 250px; height: 250px; margin: 30px 10px 0 25px; border-radius: 10px;"><br><br>
-        <a href="#" style="font-size: small;">VIEW MORE</a>
+        <a href="#" style="font-size: small;"><router-link to="/women">VIEW MORE</router-link></a>
       </div>
       <div class="trending4" style="text-align: center; justify-content: center;">
         <img src="../assets/images/women-trending4.webp" alt="women jacket" style="width: 250px; height: 250px; margin: 30px 10px 0 25px; border-radius: 10px;"><br><br>
-        <a href="#" style="font-size: small;">VIEW MORE</a>
+        <a href="#" style="font-size: small;"><router-link to="/women">VIEW MORE</router-link></a>
       </div>
     </div>
 
@@ -239,31 +244,33 @@
         <p style="font-size: 25px; margin-top: 65px; font-weight: 800;">NEW ARRIVAL</p>
         <p style="font-size: 20px; margin-top: 30px;">KID COLLECTION</p>
         <p style="font-size: 15px; margin-top: 15px;">Check out our men clothes</p>
-        <button class="shoping-button" style="margin-top: 25px; padding: 10px 30px 10px 30px; border-radius: 10px; ">SHOP NOW</button>
+        <router-link to="/kid">
+          <button class="shoping-button" style="margin-top: 25px; padding: 10px 30px 10px 30px; border-radius: 10px; ">SHOP NOW</button>
+        </router-link>
       </div>
       <div class="new-arrive1" style="text-align: center; justify-content: center;">
         <img class="arrival-image" src="../assets/images/kid-shirt.webp" alt="kid shirt" style="width: 230px; height: 230px; margin: 10px; border-radius: 10px;">
         <p style="margin: 0.3rem;">SHIRT</p>
         <p style="margin: 0.3rem;">10,00$</p>
-        <a href="#" style="font-size: small;">VIEW MORE</a>
+        <a href="#" style="font-size: small;"><router-link to="/kid">VIEW MORE</router-link></a>
       </div>
       <div class="new-arrive2" style="text-align: center; justify-content: center;">
         <img class="arrival-image"  src="../assets/images/kid-hoodie.jpeg" alt="kid hoodie" style="width: 230px; height: 230px; margin: 10px; border-radius: 10px;">
         <p style="margin: 0.3rem;">HOODIE</p>
         <p style="margin: 0.3rem;">15,00$</p>
-        <a href="#" style="font-size: small;">VIEW MORE</a>
+        <a href="#" style="font-size: small;"><router-link to="/kid">VIEW MORE</router-link></a>
       </div>
       <div class="new-arrive3" style="text-align: center; justify-content: center;">
         <img class="arrival-image"  src="../assets/images/kid-sport.webp" alt="kid sport shirt" style="width: 230px; height: 230px; margin: 10px; border-radius: 10px;">
         <p style="margin: 0.3rem;">SPORT</p>
         <p style="margin: 0.3rem;">15,00$</p>
-        <a href="#" style="font-size: small;">VIEW MORE</a>
+        <a href="#" style="font-size: small;"><router-link to="/kid">VIEW MORE</router-link></a>
       </div>
       <div class="new-arrive4" style="text-align: center; justify-content: center;">
         <img class="arrival-image"  src="../assets/images/kid-jacket.webp" alt="kid jacket" style="width: 230px; height: 230px; margin: 10px; border-radius: 10px;">
         <p style="margin: 0.3rem;">JACKET</p>
         <p style="margin: 0.3rem;">20,00$</p>
-        <a href="#" style="font-size: small;">VIEW MORE</a>
+        <a href="#" style="font-size: small;"><router-link to="/kid">VIEW MORE</router-link></a>
       </div>
     </div>
     <br><br>
@@ -275,7 +282,7 @@
         <div class="thing1" style="text-align: center; justify-content: center;">
           <img class="thing-img" src="../assets/images/kid-glasses.jpeg" alt="kid-glasses" style="width: 260px; height: 260px; margin: 10px 0; border-radius: 10px;">
           <p style="margin: 0.3rem;">GLASSES</p>
-          <a href="#" style="font-size: small;">VIEW MORE</a>
+          <a href="#" style="font-size: small;"><router-link to="/kid">VIEW MORE</router-link></a>
         </div>
         <div class="thing2" style="text-align: center; justify-content: center;">
           <img class="thing-img" src="../assets/images/kid-hat.jpeg" alt="kid-hat" style="width: 260px; height: 260px; margin: 10px 0; border-radius: 10px;">
@@ -285,7 +292,7 @@
         <div class="thing3" style="text-align: center; justify-content: center;">
           <img class="thing-img" src="../assets/images/kid-watch.jpeg" alt="Wakid-watch" style="width: 260px; height: 260px; margin: 10px 0; border-radius: 10px;">
           <p style="margin: 0.3rem;">WATCH</p>
-          <a href="#" style="font-size: small;">VIEW MORE</a>
+          <a href="#" style="font-size: small;"><router-link to="/kid">VIEW MORE</router-link></a>
         </div>
       </div>
     </div>
@@ -298,19 +305,19 @@
       <div class="treding-cate">
         <div class="treding1" style="text-align: center; justify-content: center;">
           <img src="../assets/images/kid-trending1.jpeg" alt="kid shirt" style="width: 250px; height: 250px; margin: 30px 10px 0 25px; border-radius: 10px;"><br><br>
-          <a href="#" style="font-size: small;">VIEW MORE</a>
+          <a href="#" style="font-size: small;"><router-link to="/kid">VIEW MORE</router-link></a>
         </div>
         <div class="trending2" style="text-align: center; justify-content: center;">
           <img src="../assets/images/kid-trending2.webp" alt="kid hoodie" style="width: 250px; height: 250px; margin: 30px 10px 0 25px; border-radius: 10px;"><br><br>
-          <a href="#" style="font-size: small;">VIEW MORE</a>
+          <a href="#" style="font-size: small;"><router-link to="/kid">VIEW MORE</router-link></a>
         </div>
         <div class="trending3" style="text-align: center; justify-content: center;">
           <img src="../assets/images/kid-trending3.jpeg" alt="kid jacket" style="width: 250px; height: 250px; margin: 30px 10px 0 25px; border-radius: 10px;"><br><br>
-          <a href="#" style="font-size: small;">VIEW MORE</a>
+          <a href="#" style="font-size: small;"><router-link to="/kid">VIEW MORE</router-link></a>
         </div>
         <div class="trending4" style="text-align: center; justify-content: center;">
           <img src="../assets/images/kid-trending4.jpeg" alt="kid dress" style="width: 250px; height: 250px; margin: 30px 10px 0 25px; border-radius: 10px;"><br><br>
-          <a href="#" style="font-size: small;">VIEW MORE</a>
+          <a href="#" style="font-size: small;"><router-link to="/kid">VIEW MORE</router-link></a>
         </div>
       </div>
 
@@ -325,19 +332,19 @@
       <div class="treding-cate" >
       <div class="treding1" style="text-align: center; justify-content: center;">
         <img src="../assets/images/bag.jpeg" alt="bag" style="width: 250px; height: 250px; margin: 30px 10px 0 25px; border-radius: 10px;"><br><br>
-        <a href="#" style="font-size: small;">VIEW MORE</a>
+        <a href="#" style="font-size: small;"><router-link to="/accessories">VIEW MORE</router-link></a>
       </div>
       <div class="trending2" style="text-align: center; justify-content: center;">
         <img src="../assets/images/hat.jpeg" alt="hat" style="width: 250px; height: 250px; margin: 30px 10px 0 25px; border-radius: 10px;"><br><br>
-        <a href="#" style="font-size: small;">VIEW MORE</a>
+        <a href="#" style="font-size: small;"><router-link to="/accessories">VIEW MORE</router-link></a>
       </div>
       <div class="trending3" style="text-align: center; justify-content: center;">
         <img src="../assets/images/small-bag.jpeg" alt="small bag" style="width: 250px; height: 250px; margin: 30px 10px 0 25px; border-radius: 10px;"><br><br>
-        <a href="#" style="font-size: small;">VIEW MORE</a>
+        <a href="#" style="font-size: small;"><router-link to="/accessories">VIEW MORE</router-link></a>
       </div>
       <div class="trending4" style="text-align: center; justify-content: center;">
         <img src="../assets/images/sunglasses.jpeg" alt="sunglasses" style="width: 250px; height: 250px; margin: 30px 10px 0 25px; border-radius: 10px;"><br><br>
-        <a href="#" style="font-size: small;">VIEW MORE</a>
+        <a href="#" style="font-size: small;"><router-link to="/accessories">VIEW MORE</router-link></a>
       </div>     
     </div>
     <br><br><br>
@@ -378,7 +385,7 @@ import Header from '../components/Header.vue';
   export default {
      components:{
       Header
-     }
+     },
   }
 </script>
 
@@ -526,7 +533,7 @@ import Header from '../components/Header.vue';
     /*men colllection*/
   .collection{
     width: 100%;
-    height: 340px;
+    height: 350px;
     display: flex;
     justify-content: space-around;
     background-color: #f6f6f6;
@@ -535,6 +542,8 @@ import Header from '../components/Header.vue';
   .title-text, .new-arrive1, .new-arrive2, .new-arrive3, .new-arrive4{width: 20%;}
   .shoping-button{background-color: #d9d9d9; border: none;}
   .shoping-button:hover{background-color: #757474;}
+  .shoping-btn{background-color: white;}
+  .shoping-btn:hover{background: #757474;}
   .arrival-image{box-shadow: 5px 10px 18px #757474;}
   /* thing you may like*/
   .category1{
