@@ -6,31 +6,9 @@
         <br>
             <div id="cart" class="w-25 border border-dark mt-5" v-if="showCart">
             <h4 class="text-center">Cart</h4>
-            <ul>
-                <li v-for="it in cart" :key="it.id">
-                    {{ it.title }} 
-                    {{ it.quantity }} 
-                    {{ it.price }}
-                 <button @click="removeFromCart(it)">X</button>
-                </li>
-            </ul>
+            
             </div>
         </div>
-        
-        <h1>Products</h1>
-    <ul>
-      <li v-for="item in items" :key="item.id">
-        {{ item.title }}
-        <button @click="addToCart(item)">Add to cart</button>
-      </li>
-    </ul>
-
-    <h1>Cart</h1>
-    <ul>
-      <li v-for="it in cart" :key="it.id">
-        {{ it.title }} - {{ it.quantity }} - {{ it.price }}
-      </li>
-    </ul>
 
     </div>
   
@@ -46,22 +24,7 @@ export default {
       showCart: false
     };
   },
-  methods: {
-    addToCart(item) {
-      const it = this.cart.find((it) => it.id === item.id);
-      if (it) {
-        it.quantity++;
-      } else {
-        this.cart.push({ ...item, quantity: 1 });
-      }
-    },
-    removeFromCart(item) {
-      const index = this.cart.findIndex((i) => i.id === item.id);
-      if (index !== -1) {
-        this.cart.splice(index, 1);
-      }
-    },
-  },
+  
 }
 </script>
 
