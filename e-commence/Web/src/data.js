@@ -13,7 +13,7 @@ export const items = [
         title: 'Hoodie',
         price: '20,00$',
         description: 'hello2',
-        image: './assets/images/Hoodie.webp'
+        image: 'https://www.nme.com/wp-content/uploads/2022/09/alice-in-borderland-season-two@2000x1270-1392x884.jpg'
     },
     {
         id: 3,

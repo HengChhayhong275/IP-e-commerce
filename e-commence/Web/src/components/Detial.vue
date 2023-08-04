@@ -24,6 +24,14 @@
                                         <li><button type="button" class="mx-2 rounded-circle border border-secondary ">L</button></li>
                                     </ul>
                                 </div>
+                                <div class="color d-flex">
+                                    <p class="mt-1">available color : </p>
+                                    <ul class="d-flex mx-1">
+                                        <li><button type="button" class="me-2 rounded-circle border border-secondary bg-secondary" style="width: 25px; height: 25px;"></button></li>
+                                        <li><button type="button" class="mx-2 rounded-circle border border-secondary bg-dark" style="width: 25px; height: 25px;"></button></li>
+                                        <li><button type="button" class="mx-2 rounded-circle border border-secondary bg-success" style="width: 25px; height: 25px;"></button></li>
+                                    </ul>
+                                </div>
                                 <hr class="hr">
                                 <div class="amount">
                                     <h4>amount</h4>

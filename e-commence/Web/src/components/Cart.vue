@@ -2,12 +2,8 @@
     <div class="cart">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <div class="cart-btn">
-            <button class="Cart mt-3" @click="showCart = !showCart"><i class="fa-solid fa-cart-shopping"></i> Cart {{ cart.length }}</button>
+            <button class="Cart" @click="showCart = !showCart"><i class="fa-solid fa-cart-shopping"></i> Cart {{ cart.length }}</button>
         <br>
-            <div id="cart" class="w-25 border border-dark mt-5" v-if="showCart">
-            <h4 class="text-center">Cart</h4>
-            
-            </div>
         </div>
 
     </div>
@@ -47,9 +43,10 @@ export default {
     scale: 1.05;
     color: #8CC0DE;
   }
-  #cart{
+  .cart{
     position: absolute;
-    right: 10px;
+    right: 0px;
+    top: 2.3rem;
   }
   li{
     list-style: none;

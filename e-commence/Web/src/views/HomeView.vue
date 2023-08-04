@@ -25,7 +25,7 @@
       <div class="box2">
         <h3 class="promo">Promotion Of The Month</h3>
         <p class="bestsell">Best Sell In Shop</p>
-        <button class="shoping-button"><router-link to="/product" class="text-dark text-decoration-none">Shop Now</router-link></button>
+        <router-link to="/product" class="text-dark text-decoration-none"><button class="shoping-button">Shop Now</button></router-link>
       </div>
       <div class="box3">
         <img class="men" src="../assets/images/Men-cloth.jpeg" alt="men">
@@ -363,7 +363,7 @@
           <img src="../assets/images/wing.png" alt="WING BANK">
           <img src="../assets/images/aceleda.png" alt="ACELEDA BANK">
           <img src="../assets/images/ftb.png" alt="FTB BANK">
-          <h3 class="upper-text">PAYMENT METHOD WE</h3>
+          <h3 class="upper-text">PAYMENT METHOD</h3>
           <img class="leading-images" src="../assets/images/visa.png" alt="VISA">
           <img src="../assets/images/mastercard.png" alt="MASTERCARD">
           <img src="../assets/images/paypal.png" alt="PAYPAL">
@@ -632,7 +632,7 @@ import Header from '../components/Header.vue';
     padding-left: 28%;
   }
   .about-container .leading-images{
-    padding-left: 35%;
+    margin-left: 35%;
   }
   .about-container .abouts-box{
     border-left: 1px solid black;

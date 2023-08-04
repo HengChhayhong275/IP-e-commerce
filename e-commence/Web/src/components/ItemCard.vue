@@ -14,9 +14,7 @@
                 <router-link v-bind:to="'/detial/'+item.id">
                   <button class="btn1">VIEW DETAIL</button>
                 </router-link>
-                <router-link  v-bind:to="'/detial/'+item.id">
-                  <button class="btn2">ADD TO CART</button>
-              </router-link>
+                  <button @click="addToCart(item)" class="btn2">ADD TO CART</button>
               </div>
             </div>
         </div>
@@ -30,6 +28,7 @@
     name:'itemcard',
     props: {
     search: String,
+    cart:[],
   },
   computed: {
     filteredItems() {
@@ -37,13 +36,16 @@
       return this.items.filter(item =>
         item.title.toLowerCase().includes(this.search.toLowerCase())
       );
+    },
   },
-},
     data() {
       return {
         items,
       }
     },
+    methods: {
+      
+    }
   }
   </script>
   

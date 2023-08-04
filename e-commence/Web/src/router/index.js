@@ -9,6 +9,10 @@ import Kid from "../components/Kid.vue"
 import Accessories from "../components/Accessories.vue"
 import Detial from "../components/Detial.vue"
 import Cart from "../components/Cart.vue"
+import Checkout from "../components/Checkout.vue"
+import Payment from "../components/Payment.vue"
+import Paycheck from "../components/Paycheck.vue"
+import ThankPage from "../components/ThankPage.vue"
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -63,7 +67,26 @@ const router = createRouter({
       name: "cart",
       component: Cart,
     },
-
+    {
+      path: "/checkout",
+      name: "checkout",
+      component: Checkout,
+    },
+    {
+      path: "/payment",
+      name: "payment",
+      component: Payment,
+    },
+    {
+      path: "/paycheck",
+      name: "paycheck",
+      component: Paycheck,
+    },
+    {
+      path: "/thank",
+      name: "thank",
+      component: ThankPage,
+    },
 
   ],
 });

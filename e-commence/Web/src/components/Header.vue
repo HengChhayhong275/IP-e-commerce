@@ -12,7 +12,7 @@
         </div>
           <h2>168 CLOTHES STORE</h2>
           <li style="position: absolute; right: 4rem;"><i style="position: absolute; right: 8.5rem; margin-top: 0.2rem;"  class="fa-solid fa-location-dot"></i><a style="text-decoration: none; color: black; font-size: 1rem; margin: 0 3.5rem;" href="https://www.google.com/maps/place/%C3%86ON+Mall+Mean+Chey/@11.4849215,104.9155082,17z/data=!3m1!4b1!4m6!3m5!1s0x31095b3797530b61:0xd51a35853e6f22da!8m2!3d11.4849163!4d104.9180831!16s%2Fg%2F11t4dgl9vc?entry=ttu" target="_blank">Find Store</a></li>
-          <button class="Cart"><i class="fa-solid fa-cart-shopping"></i> Cart</button>
+          <router-link to="/checkout"><button class="Cart"><i class="fa-solid fa-cart-shopping"></i> Cart</button></router-link>
       </secion>
     </div>
     
@@ -100,7 +100,7 @@
     cursor: pointer;
     padding: 0.3rem;
     position: absolute;
-    right: 1rem;
+    top:2.3rem;
     border-radius: 10px;
   }
   .Cart:hover{
