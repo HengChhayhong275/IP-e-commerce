@@ -198,4 +198,7 @@ button {
     justify-content: center;
     align-items: center;
 }
+li{
+    list-style: none;
+}
 </style>

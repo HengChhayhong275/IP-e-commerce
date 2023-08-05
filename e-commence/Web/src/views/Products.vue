@@ -16,8 +16,8 @@
 </template>
 <script>
 import HeaderProduct from '../components/HeaderProduct.vue'
-import Search from '../components/Search.vue';
 import ItemCard from '../components/ItemCard.vue';
+import Search from '../components/Search.vue';
   export default{
     name: "product",
     components: {

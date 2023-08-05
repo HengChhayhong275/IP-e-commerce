@@ -25,7 +25,6 @@
 <script>
 import { items } from '../data';
   export default {
-    name:'itemcard',
     props: {
     search: String,
     

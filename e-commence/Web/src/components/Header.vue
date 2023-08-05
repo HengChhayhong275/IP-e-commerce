@@ -100,6 +100,7 @@
     cursor: pointer;
     padding: 0.3rem;
     position: absolute;
+    right: 1rem;
     top:2.3rem;
     border-radius: 10px;
   }

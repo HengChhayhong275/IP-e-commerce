@@ -1,7 +1,7 @@
 <template>
     <div class="container">
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-        <div v-for="item in (filteredItems,items)" :key="item.id">
+        <div v-for="item in (filteredItems)" :key="item.id">
           <div class="card">
               <img :src="item.image" alt="...">
               <div class="category">
