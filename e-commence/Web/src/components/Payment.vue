@@ -2,7 +2,7 @@
     <div id="payment">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <div id="header" class="w-100 text-center">
-            <h2>168 CLOTHES STORE</h2>
+            <router-link to="/" class="text-decoration-none"><h2 class="text-dark">168 CLOTHES STORE</h2></router-link>
         </div>
         <div id="sub-header" class="w-100">
             <button type="button" class="btn btn-light ms-2 mt-2" onclick="window.history.back()">
@@ -87,7 +87,7 @@
                     </div>    
                         <div class="last-btn">
                             <router-link to="/paycheck">
-                            <button class="btn btn-success px-5 py-3 mt-5 w-100" @click="gotoPaycheck">
+                            <button class="btn btn-success px-5 py-3 mt-5 w-100">
                                 <span>Go to Paycheck</span>
                             </button>
                         </router-link>    
@@ -100,6 +100,7 @@
 
 <script>
 export default {
+    
     data() {
     return {
       word: 'Confirm Information',
@@ -117,7 +118,7 @@ export default {
         {
           id: 2,
           name: "CE Express",
-          price: 1.25,
+          price: 1.5,
         },
         {
           id: 3,

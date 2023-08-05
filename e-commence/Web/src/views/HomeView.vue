@@ -194,7 +194,7 @@
       <br>
       <div class="category1">
         <div class="thing1" style="text-align: center; justify-content: center;">
-          <img class="thing-img" src="../assets/images/women-shoes.avif" alt="women shoes" style="width: 260px; height: 260px; margin: 10px 0; border-radius: 10px;">
+          <img class="thing-img" src="../assets/images/women-shoes.jpg" alt="women shoes" style="width: 260px; height: 260px; margin: 10px 0; border-radius: 10px;">
           <p style="margin: 0.3rem;">WOMEN SHOES</p>
           <a href="#" style="font-size: small;"><router-link to="/women">VIEW MORE</router-link></a>
         </div>

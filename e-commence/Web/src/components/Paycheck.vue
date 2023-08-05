@@ -2,7 +2,7 @@
   <div>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <div id="header" class="w-100 text-center">
-            <h2>168 CLOTHES STORE</h2>
+            <router-link to="/" class="text-decoration-none"><h2 class="text-dark">168 CLOTHES STORE</h2></router-link>
         </div>
         <div id="sub-header" class="w-100">
             <button type="button" class="btn btn-light ms-2 mt-2" onclick="window.history.back()">
@@ -41,7 +41,7 @@
                 <hr class="mx-auto mt-3">
                 <div class="d-flex justify-content-between">
                     <p class="mb-2 ms-3 mt-3">SUBTOTAL</p>
-                    <p class="mb-2 me-3 mt-3">100,00$</p>
+                        <p class="mb-2 me-3 mt-3 text-danger">{{ totals }}$</p>
                 </div>
                 <div class="d-flex justify-content-between">
                     <p class="mb-2 ms-3 mt-3">DISCOUNT</p>
@@ -49,15 +49,17 @@
                 </div>
                 <div class="d-flex justify-content-between">
                     <p class="mb-2 ms-3 mt-3">SHIPPING</p>
-                    <p class="mb-2 me-3 mt-3">0$</p>
+                    <p class="mb-2 me-3 mt-3 text-danger">{{ delivery }}$</p>
                 </div>
                 <hr class="mx-auto mt-3">
                 <div class="d-flex justify-content-between">
                     <h4 class="mb-2 ms-3 mt-3">TOTAL</h4>
-                    <h4 class="mb-2 me-3 mt-3">0$</h4>
+                        <h4 class="mb-2 me-3 mt-3 text-success">{{ total }}$</h4>
                 </div>
                 <div class="d-flex justify-content-center" id="btns">
-                    <router-link to="/thank"><button type="button" id="checkout" class="btn btn-success btn-lg btn block text-white my-4">PAY</button></router-link>
+                    <button type="button" id="checkout" @click="checkout()" class="btn btn-success btn-lg btn block text-white my-4">Pay
+                    <span v-if="isLoading" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                    </button>
                 </div>
                 <hr class="mx-auto mt-3">
                 <p class="text-center mb-3 mt-2">PAYMENT METHOD</p>
@@ -74,6 +76,52 @@
 
 <script>
 export default {
+    data() {
+    return {
+      isLoading: false,
+      cart: [],
+      delivery: 1.5,  
+    };
+  },
+  methods: {
+    checkout() {
+      // Set the loading flag to true
+      this.isLoading = true;
+
+      // Delay routing to the other page by 1 second
+      setTimeout(() => {
+        this.$router.push('/thank');
+        this.isLoading = false;
+      }, 1000);
+    },
+  },
+  mounted() {
+    const cart = JSON.parse(localStorage.getItem('cart'));
+    if (cart) {
+      this.cart = cart;
+    };
+
+    },
+    computed: {
+    subtotal() {
+      return this.cart.reduce((total, item) => {
+        return total += (item.price * item.quantity);
+      }, 0);
+    },
+    total() {
+      let deliver =  1.5;
+      return this.subtotal+ 1.5;
+    },
+    subtotals() {
+      return this.cart.reduce((totals, item) => {
+        return totals += ((item.price * item.quantity));
+      }, 0);
+    },
+    totals() {
+      
+      return this.subtotals;
+    },
+  },
 
 }
 </script>

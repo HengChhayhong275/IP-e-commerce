@@ -10,7 +10,7 @@
         <div class="toggle_btn"  @click="showNav = !showNav">
           <i class="fa-solid fa-bars"></i>
         </div>
-          <h2>168 CLOTHES STORE</h2>
+        <router-link to="/" class="text-decoration-none"><h2 class="text-dark">168 CLOTHES STORE</h2></router-link>
           <nav>
             <ul>
               <li><a><router-link to="/product" class="a">PRODUCTS</router-link></a></li>

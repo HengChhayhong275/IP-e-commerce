@@ -1,7 +1,7 @@
 <template>
     <div class="container">
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-        <div v-for="item in filteredItems" :key="item.id">
+        <div v-for="item in (filteredItems,items)" :key="item.id">
           <div class="card">
               <img :src="item.image" alt="...">
               <div class="category">
@@ -9,7 +9,7 @@
                 <p class="cate1">{{ item.category }}</p>
               </div>
               <h5>{{ item.title }}</h5>
-              <p class="text-danger">{{ item.price }}</p>
+              <p class="text-danger">{{ item.price }}$</p>
               <div class="btn">
                 <router-link v-bind:to="'/detial/'+item.id">
                   <button class="btn1">VIEW DETAIL</button>
@@ -28,7 +28,7 @@
     name:'itemcard',
     props: {
     search: String,
-    cart:[],
+    
   },
   computed: {
     filteredItems() {
@@ -41,11 +41,26 @@
     data() {
       return {
         items,
+        cart:[],
       }
     },
     methods: {
+      addToCart(item) {
+      // Get the cart data from localStorage
+      const cart = JSON.parse(localStorage.getItem('cart'));
+
+      // Add the item to the cart
+      if (!cart.find((it) => it.id === item.id)) {
+        cart.push({ ...item, quantity: 1 });
+      }
+
+      // Store the cart data in localStorage
+      localStorage.setItem('cart', JSON.stringify(cart));
+    },
+    },
+    components: {
       
-    }
+    },
   }
   </script>
   

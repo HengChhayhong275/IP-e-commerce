@@ -2,7 +2,7 @@
   <div id="BagHeader">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <div id="header" class="w-100">
-        <h2>168 CLOTHES STORE</h2>
+        <router-link to="/" class="text-decoration-none"><h2 class="text-dark">168 CLOTHES STORE</h2></router-link>
     </div>
     <div id="sub-header" class="w-100">
         <button type="button" class="btn btn-light ms-2 mt-2" onclick="window.history.back()">
